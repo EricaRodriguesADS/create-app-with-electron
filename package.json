@@ -4,11 +4,18 @@
   "description": "Pequeno projeto usando Electron js",
   "main": "./src/index.js",
   "scripts": {
-    "start": "electron  ./src/index.js"
+    "start": "electron  ./src/index.js",
+    "dist": "build"
   },
   "author": "Érica Barbosa Rodrigues",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^5.0.1"
+    "electron": "^5.0.1",
+    "electron-builder": "^20.40.2"
+  },
+  "build": {
+    "win": {
+      "target": "NSIS"
+    }
   }
 }
