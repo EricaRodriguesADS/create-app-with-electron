@@ -4,8 +4,11 @@
   "description": "Pequeno projeto usando Electron js",
   "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron  ./src/index.js"
   },
   "author": "Érica Barbosa Rodrigues",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^5.0.1"
+  }
 }
